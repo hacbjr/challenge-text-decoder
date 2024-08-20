@@ -1,6 +1,6 @@
 # challenge-text-decoder
 
-##T7 ONE - Oracle Next Education com parceria da Alura - Challenge Decodificador de Texto
+## T7 ONE - Oracle Next Education com parceria da Alura - Challenge Decodificador de Texto
 
 ### Features:
 - Traduz a letra "e" para "enter", a letra "i" para "imes", a letra "a" para "ai", a letra "o" para "ober" e a letra "u" para "ufat";
