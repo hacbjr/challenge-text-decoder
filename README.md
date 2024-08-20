@@ -9,5 +9,5 @@
 - Há 3 botões: "Encrypt" (criptografar), "Decrypt" (descriptograr) e "Copy" (copiar). 
 
 
-<b> GitHub Pages Deplay </b>
+<b> GitHub Pages Deploy: </b>
 https://hacbjr.github.io/challenge-text-decoder/
