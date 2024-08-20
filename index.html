@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Challenge Decodificador de Texto</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="new_container">
+        <div class="container_leftbox">
+          <div class="container_titleboxandtext">
+            <div class="container_titlebox">
+              <h1 class="container_title">Challenge Decodificador de Texto</h1>
+            </div>
+            <textarea
+              class="container_input"
+              placeholder="Digite aqui..."
+            ></textarea>
+          </div>
+          <div class="container_leftbottom">
+            <h5 class="container_rule">
+              Apenas letras minúsculas e sem acento.
+            </h5>
+            <div class="container_btns">
+              <button onclick="encryptText()" class="container_btn">
+                Criptografar
+              </button>
+              <button onclick="decryptText()" class="container_btn">
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container_rightbox">
+          <div class="container_rectangle">
+            <h2 class="container_output" id="messageToCopy"></h2>
+            <img
+              src="./assets/img01.png"
+              id="lupe-man"
+              alt="Um Homem verificando um diamante comm a Lupa"
+            />
+            <div class="container_rightbottom">
+              <div class="container_texts">
+                <h3 class="container_text1">Nenhuma mensagem encontrada</h3>
+                <h4 class="container_text2">
+                  Digite um texto que você deseja criptografar ou
+                  descriotografar.
+                </h4>
+                <button
+                  onclick="copyText()"
+                  id="copyButton"
+                  class="container_copybtn"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="credits">
+      <h6 class="dev_by">Desenvolvido por</h6>
+      <img src="./assets/whatsapp.png" class="wpplogo" alt="Wpp Logo" />
+      <a
+        href="https://api.whatsapp.com/send?phone=5521995589995&text="
+        target="_blank"
+        class="my_name"
+        >Haroldo Bélo Jr</a
+      >
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

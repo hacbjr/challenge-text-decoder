@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  background-color: black;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+.container {
+  padding: 3% 12%;
+  display: grid;
+}
+
+.new_container {
+  display: grid;
+  font-family: "JetBrains Mono", monospace;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.container_leftbox {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.container_leftbottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.container_rightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.container_rectangle {
+  width: 22rem;
+  height: 45rem;
+  background: rgb(226, 226, 226);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.container_title {
+  font-size: 3rem;
+  color: white;
+}
+
+.container_titleboxandtext {
+  gap: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container_titlebox {
+  align-items: center;
+  display: flex;
+}
+
+.container_input {
+  font-size: 1.6rem;
+  color: white;
+  background-color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+
+.container_output {
+  word-break: break-word;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 1.3rem;
+  text-align: left;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+
+.container_btns {
+  color: black;
+  justify-content: center;
+  gap: 3.125rem;
+  display: flex;
+}
+
+.container_btn {
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.container_texts {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  align-items: center;
+}
+
+.container_text1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.container_text2 {
+  font-size: 0.7rem;
+}
+
+.container_rule {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.container_copybtn {
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.credits {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.dev_by {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.my_name {
+  background-color: transparent;
+  text-decoration: none;
+  color: #727272;
+}
+
+.wpplogo {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-height: 768px) {
+  .container {
+    padding: 2.5% 10%;
+  }
+
+  .container_leftbox,
+  .container_rightbox {
+    gap: 4rem;
+  }
+
+  .container_rectangle {
+    width: 18rem;
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .container_input {
+    height: 12rem;
+  }
+
+  .container_title {
+    font-size: 2.5rem;
+  }
+
+  .container_btn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .container_titleboxandtext {
+    gap: 3rem;
+  }
+
+  .container_btns {
+    gap: 2.5rem;
+  }
+
+  .container_texts {
+    gap: 1rem;
+  }
+
+  .container_text1 {
+    font-size: 1.2rem;
+  }
+
+  .container_text2 {
+    font-size: 0.6rem;
+  }
+
+  .container_rule {
+    font-size: 0.7rem;
+  }
+
+  .container_copybtn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .credits {
+    gap: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .wpplogo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    padding: 5%;
+    display: flex;
+  }
+  .new_container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container_leftbox {
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+  }
+
+  .container_rightbox {
+    align-items: center;
+    padding: 2%;
+    gap: 2%;
+  }
+
+  .container_rectangle {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .container_input {
+    height: auto;
+  }
+
+  .container_btns {
+    margin-bottom: 2%;
+  }
+}
